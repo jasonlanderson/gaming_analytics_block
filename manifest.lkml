@@ -1,25 +1,25 @@
 ## What table houses your events?
 constant: events_table {
-  value: "`se-pbl.gaming_demo_dev.raw_events`"
+  value: "`mythical-games.ddna_s3.ddna_export`"
 }
 ## When did the event occour?
 constant: timestamp_field {
-  value: "event"
+  value: "event_timestamp"
 }
 
 ## What country was the event fired from?
 constant: country_field {
-  value: "country"
+  value: "ga_user_country"
 }
 
 ## is as the device's platform?
 constant: platform_field {
-  value: "device_platform"
+  value: "device_type"
 }
 
 ## What is the game version?
 constant: version_field {
-  value: "game_version"
+  value: "changelist"
 }
 
 ## What is the game name field? (for schemas with multiple fields)

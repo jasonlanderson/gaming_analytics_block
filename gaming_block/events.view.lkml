@@ -4,7 +4,7 @@ view: events {
   extends: [raw_events]
 
 # Configured fields from manifest file:
-dimension_group: event { type:time sql: ${TABLE}.@{timestamp_field} ;;}
+dimension_group: event { type:time sql: CAST(${TABLE}.@{timestamp_field} AS TIMESTAMP) ;;}
 dimension: user_id { type:string sql: ${TABLE}.@{user_id_field} ;; }
 dimension: event_name { type:string sql: ${TABLE}.@{event_name_field} ;; }
 dimension: country { type: string sql: ${TABLE}.@{country_field} ;;}
